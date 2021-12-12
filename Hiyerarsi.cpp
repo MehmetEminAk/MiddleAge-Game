@@ -36,7 +36,7 @@ class Aristokratlar:public Humans{
 			parasi-=10;
 			sayginlik+=1;
 			guc+=1;
-			cout<<ad<<" para daðýtýldý "<<ad<<"'ýn kalan parasý: "<<parasi<<endl;
+			cout<<ad<<" para daï¿½ï¿½tï¿½ldï¿½ "<<ad<<"'ï¿½n kalan parasï¿½: "<<parasi<<endl;
 		}
 		void sayginligiYazdir();
 		/*Aristokratlar();
@@ -50,20 +50,20 @@ class Koleler:public Humans{
 
 void Aristokratlar::savas(Aristokratlar&a){
 			if(a.guc>guc){
-				cout<<"Savas kaybedildi savaþý "<<a.ad<<" kazandý.";
+				cout<<"Savas kaybedildi savaï¿½ï¿½ "<<a.ad<<" kazandï¿½.";
 				sayginlik-=10;
 				parasi-=100;
 				saglik-=10;
 			}
 			else{
-				cout<<"Savaþ kazanýldý tebrikler muzaffer komutan";
+				cout<<"Savaï¿½ kazanï¿½ldï¿½ tebrikler muzaffer komutan";
 				sayginlik+=10;
 				parasi+=100;
 			}
 			
 		}
  
-/*void Humans::eat(){
+void Humans::eat(){
 	cout<<"Oh doyduk"<<endl;
 	if(saglik==100)	
 	{
@@ -73,10 +73,10 @@ void Aristokratlar::savas(Aristokratlar&a){
 	{
 		cout<<"Sagliginiz 1 artti"<<endl;
 		saglik++;
-		cout<<"Yeni saðlýðýnýz "<<saglik;
+		cout<<"Yeni saï¿½lï¿½ï¿½ï¿½nï¿½z "<<saglik;
 	}
 }
-*/
+
 
 //Humans::Humans(string ad,string soyad):ad(ad),soyad(soyad){ };
 
