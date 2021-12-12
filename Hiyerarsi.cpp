@@ -64,7 +64,7 @@ void Aristokratlar::savas(Aristokratlar&a){
 		}
  
 void Humans::eat(){
-	cout<<"Oh doyduk"<<endl;
+	cout<<"Oh doyduk şükür"<<endl;
 	if(saglik==100)	
 	{
 	cout<<"Sagliginiz zaten full"<<endl;
