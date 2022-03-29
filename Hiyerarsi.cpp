@@ -16,8 +16,8 @@ class Burjuvalar:public Humans{
 	public:
 		string sahipOlduguYerler[30];
 		int parasi;
-		short int calistirdigiKoleSayisi;
-		void koleKov();
+		short int calisanSayisi;
+		void calisanKov();
 		void maasVer();
 		Burjuvalar(string ad,string soyad);
 		Burjuvalar();	
@@ -30,33 +30,32 @@ class Aristokratlar:public Humans{
 		string hangiUlkeninYoneticisi;
 		int sayginlik=0;
 		int parasi=10000;
-		void raconKes();
 		void paraDagit()
 		{
 			parasi-=10;
 			sayginlik+=1;
 			guc+=1;
-			cout<<ad<<" para da��t�ld� "<<ad<<"'�n kalan paras�: "<<parasi<<endl;
+			cout<<ad<<" para dagitildi "<<ad<<"'in kalan parasi: "<<parasi<<endl;
 		}
 		void sayginligiYazdir();
 		/*Aristokratlar();
 		Aristokratlar(string ad,string soyad);*/
 };
-class Koleler:public Humans{
+class calisanlar:public Humans{
 	public:
-		string efendisininAdi;
+		string patronunAdi;
 	
 }; 
 
 void Aristokratlar::savas(Aristokratlar&a){
 			if(a.guc>guc){
-				cout<<"Savas kaybedildi sava�� "<<a.ad<<" kazand�.";
+				cout<<"Savas kaybedildi savasi "<<a.ad<<" kazandi.";
 				sayginlik-=10;
 				parasi-=100;
 				saglik-=10;
 			}
 			else{
-				cout<<"Sava� kazan�ld� tebrikler muzaffer komutan";
+				cout<<"Savas kazanildi tebrikler muzaffer komutan";
 				sayginlik+=10;
 				parasi+=100;
 			}
@@ -64,7 +63,7 @@ void Aristokratlar::savas(Aristokratlar&a){
 		}
  
 void Humans::eat(){
-	cout<<"Oh doyduk şükür"<<endl;
+	cout<<"Yemek yendi"<<endl;
 	if(saglik==100)	
 	{
 	cout<<"Sagliginiz zaten full"<<endl;
@@ -73,7 +72,7 @@ void Humans::eat(){
 	{
 		cout<<"Sagliginiz 1 artti"<<endl;
 		saglik++;
-		cout<<"Yeni sa�l���n�z "<<saglik;
+		cout<<"Yeni sagliginiz "<<saglik;
 	}
 }
 
